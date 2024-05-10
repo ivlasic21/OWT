@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <title>Obrazac</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ivan Vlašić">
+    <meta name="description" content="Obrazac za hotel">
+    <link rel="stylesheet" href="../CSS/dizajn.css">
+    <link rel="stylesheet" href="../CSS/ivlasic21_responzivni_dizajn.css">
+</head>
+
+<body>
+    <script src="../JS/java.js"></script>
+    <header class="pocetni-header"><h1 class="naslov">Grand Hotel Tremezzo</h1>
+        <div class="logooo">
+            <a class="logoo" href="../index.html"> <img class="logo" src="../Dokumenti/slike/Logo.png" alt="Logo" width="90"></a> </div></header>
+    <nav class="navigacija">
+        <ul class="dropdown">
+            <li><a href="#">Preglednik</a></li>
+
+          </ul>
+        <ul>
+            <li><a href="../index.html"> Početna</a></li>
+            <li><a href="../Dokumentacija/dokumentacija.html"> Dokumentacija</a></li>
+            <li><a href="../Dokumentacija/autor.html"> Autor</a></li>
+            <li><a class="nav_lok" href="./obrazac_rezer.html"> Obrazac</a></li>
+            <li class="dropdown"><a href="#">Posebne ponude</a>
+                <ul>
+                    <li><a href="./akcijske1.html">Akcija 1</a></li>
+                    <li><a href="./akcijske2.html">Akcija 2</a></li>
+                    <li><a href="./akcijske3.html">Akcija 3</a></li>
+                </ul>
+              </li>
+            <li><a href="./galerija.html">Galerija</a></li>
+            <li><a href="./cjenik.html">Cjenik</a></li>
+        </ul>
+    </nav>
+    <main class="kontent container">
+<div class="form-container">
+        <section>
+
+
+
+        </section>
+
+        <div id="greske" class="error-message">
+            Ovdje će ispisati pogrešku
+        </div>
+
+
+
+        <form id="obrazacc" enctype="multipart/form-data" method="POST" action="https://spider.foi.hr/OWT/materijali/ispis_forme.php" >
+            <fieldset>
+                <legend>Podaci o korisniku </legend>
+                <section class="lijevo">
+                <section class="kontent-sekcija">
+            <label for="Ime">Ime i Prezime</label>
+            <input type="text" id="Ime" name="Ime" value=""  size="10">
+            <br>
+            <label for="Adresa">Adresa</label>
+            <input type="text" id="Adresa" name="Adresa" value="" size="10">
+            <br>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" value="" size="10">
+            <br>
+            <label for="kont">Broj mobitela</label>
+            <input type="tel" id="kont" name="kont" value=""  size="10">
+            <br>
+        </section>
+    </section>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Podaci o rezervaciji </legend>
+
+
+        <section class="kontent-sekcija">
+            <label for="broj_osoba">Broj osoba</label>
+            <input type="number" id="broj_osoba" name="broj_osoba" min="1" max="6">
+<br>
+            <label for="date_arrival">Datum dolaska:</label>
+            <input type="date" id="date_arrival" name="date_arrival">
+          <br>
+            <label for="date_departure">Datum odlaska:</label>
+            <input type="date" id="date_departure" name="date_departure">
+<br>
+            <label for="vrijeme_dolaska">Vrijeme dolaska:</label>
+            <input type="time" id="vrijeme_dolaska" name="vrijeme_dolaska">
+
+<br>
+
+            <label for="Nacinplacanja">Način plaćanja</label>
+            <select name="Nacinplacanja []" id="Nacinplacanja">
+
+                    <option value="Kredcard">Kreditna kartica</option>
+                    <option value="PayPal">PayPal</option>
+                    <option value="Debitcard" selected>Debitna kartica</option>
+            </select>
+        </section>
+        </fieldset>
+
+        <section class="gumb">
+        <button class="saznajvise" type="reset">Resetiraj</button>
+
+            <button id="gumb1" class="saznajvise" type="submit" name="gumb">Rezerviraj</button>
+        </section>
+        </form></div>
+
+        <div class="form-container"> <div class="form-container2">
+
+        <form id="obrazaccc" enctype="multipart/form-data" method="POST" action="https://spider.foi.hr/OWT/materijali/ispis_forme.php">
+            <fieldset>
+                <legend>Kontakt</legend>
+                <section class="lijevo">
+                <section class="kontent-sekcija">
+            <span class="Predmet">Predmet</span>
+            <input type="text" id="Predmet" name="Predmet" value="" size="30">
+            <br>
+            <section class="odabir">
+            <span class="vrsta_upita">Vrsta upita: </span>
+          <input type="radio" id="upit1" name="vrsta_upita" value="1" checked>Rezervacija sobe
+            <input type="radio" id="upit2" name="vrsta_upita" value="2"> Pitanje o dostupnosti soba i cijenama
+            <input type="radio" id="upit3" name="vrsta_upita" value="3"> Prijedlozi i kritike za poboljšanje usluge
+            <input type="radio" id="upit4" name="vrsta_upita" value="4"> Pitanje o politici otkazivanja rezervacije
+            <input type="radio" id="upit5" name="vrsta_upita" value="5"> Zahtjev za organizaciju prijevoza do hotela
+                </section><br>
+            <span class="poruka">Poruka:</span>
+            <textarea id="poruka" name="poruka" rows="10" cols="40" maxlength="1000"></textarea>
+        </section>
+    </section>
+        </fieldset>
+
+
+        <section class="gumb">
+        <button class="saznajvise" type="reset">Resetiraj</button>
+
+            <button class="saznajvise" type="submit" name="gumb">Pošalji</button>
+        </section>
+        </form></div></div>
+
+
+
+    </main>
+    <footer><div class="footer">
+        Ivan Vlašić &copy;
+        <address>
+            <a class="dekoracija" href="mailto:ivlasic21@foi.hr">ivlasic21@foi.hr</a>
+            <a class="dekoracija" href="tel:00368348393">00368348393</a>
+        </address>
+          <p>31.3.2023</p>
+        <a href="https://creativecommons.org/licenses/by-nc/4.0/">
+        <img src="../Dokumenti/slike/licenca.jpg" alt="Licenca" width="100"></a>
+        <a
+            href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fspider.foi.hr%2FOWT%2F2023%2Fvjezbe%2Fivlasic21%2FZadaca_01%2FOstalo%2Fobrazac_rezer.html">
+            <img src="../Dokumenti/slike/HTML5.png" alt="HTML5 logo" width="50">
+        </a></div>
+    </footer>
+</body>
+
+</html>

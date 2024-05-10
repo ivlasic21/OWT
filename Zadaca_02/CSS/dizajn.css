@@ -1,0 +1,496 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+
+
+body {
+  margin: 0;
+  height: 100vh;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  perspective: 1px;
+}
+
+
+
+
+.naslov {
+    font-family: 'Cinzel', serif;
+    color: rgb(255, 237, 179);
+    
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+/* color: #777; */
+}
+
+.skaliraj {
+  max-width: 100%;
+}
+
+.banner {  
+  position: absolute; /* Position the image absolutely within the header */
+  top: 0; /* Align the top edge of the image with the top edge of the header */
+  left: 0; /* Align the left edge of the image with the left edge of the header */
+  width: 100%; 
+  z-index: -1; 
+  height: 20%;
+}
+
+.banner2 {  
+  position: absolute; /* Position the image absolutely within the header */
+  width: 100%;
+  z-index: -1; 
+  left: 0;
+}
+
+
+
+html {
+    background-color: rgba(0, 0, 0, 0.74);
+    background-image: url(../Dokumenti/slike/pozadina22.jpg);
+  
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+    
+}
+
+
+
+.logoo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 110px;
+  height: 100px;
+  border-radius: 10%;
+  box-shadow: 0px 3px 6px rgba(255, 255, 255, 1);
+  outline: 2px solid rgb(172, 172, 172);
+}
+.logooo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+  height: 110px;
+  border-radius: 10%;
+  box-shadow: 0px 3px 6px rgba(255, 255, 255, 1);
+  outline: 2px solid rgb(172, 172, 172);
+  
+}
+
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+  border-radius: 10px; 
+
+}
+
+.nav_lok {
+  position: relative; }
+
+
+.nav_lok:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 -4%;
+  border-top: 1px solid #ffffff81;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+}
+
+
+.pocetni-header {
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+
+
+.navigacija ul{
+    margin: 0;
+
+}
+
+.navigacija li {
+    display: inline;
+    padding: 0 5%;
+    font-size: 1.5em;
+    padding: 10px;
+
+}
+
+.navigacija a{ 
+    display: inline-block;
+    padding: 1em ;
+    color: white;
+    text-decoration: none;
+}
+
+.navigacija {
+    text-align: center;
+    border-bottom: 1px solid;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+nav li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.808);
+  border-radius: 10px;
+  padding: 0;
+  z-index: 1;
+}
+
+nav li:hover > ul {
+  display: block;
+}
+
+nav li ul li {
+  float: none;
+}
+
+nav li ul a {
+  padding: 5px 10px;
+}
+
+
+.kontent-sekcija {
+    margin: 1em;
+    color: white;
+    font-size: 0.8em;
+      background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px); 
+  padding: 10px;
+  border-radius: 10px; 
+}
+
+
+.ponude h2 {
+    font-size: 1.7em;
+ }
+
+ .ponude {
+    font-size: .6em;
+}
+
+.kontent {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+    text-align: center;
+    font-size: 2em;
+    color:aliceblue;
+}
+
+.kontent-onama {
+    font-size: 2.3em;
+    color: aliceblue;
+}
+.akcija11 {
+    border-radius: 10px;
+  }
+  
+.akcija1 , .akcija2, .akcija3 {
+    float: left;
+   margin: 15px;
+   background: rgba(255, 255, 255, 0.5);
+   backdrop-filter: blur(10px); 
+   padding: 10px;
+   border-radius: 10px;
+}
+
+.akcija-nova{
+  background: rgba(255, 255, 255, 0.5);
+   backdrop-filter: blur(10px); 
+   padding: 10px;
+   border-radius: 10px;
+   margin: 95px;
+}
+
+  .ponude {
+    display: flex;
+    justify-content: center; /* da bi se sve tri sekcije centrirale */
+  }
+  
+  .saznajvise {  /*Potrebno je staviti efekt kad prolazim preko*/
+    text-decoration: none;
+    color: aliceblue; 
+    background: rgba(0, 0, 0, 0.5);
+   backdrop-filter: blur(10px); 
+   padding: 10px;
+   border-radius: 10px;
+  }
+
+  .akcija1, .akcija2, .akcija3 {
+    width: 33.33%; /* podjela na tri jednake kolone */
+    padding: 0 1em;
+    box-sizing: border-box; /* da padding ne utječe na širinu */
+  }
+
+  .saznajvise {
+    position: relative;
+  }
+  
+  .saznajvise::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: -1;
+    opacity: 0;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .saznajvise:hover::after  {
+    opacity: 1;
+  }
+
+  .navigacija li {
+    position: relative;
+  }
+  
+  .navigacija li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: -1;
+    opacity: 0;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .navigacija li:hover::after  {
+    opacity: 1;
+  }
+  
+.ime {
+  font-weight: bold;
+}
+  
+.buducismjer {
+  font-style: italic;
+}
+
+.dokumentacija{
+  background-color: rgba(0, 0, 0, .6);
+  background-image: url(../Dokumenti/slike/Dokumentacija_pozadina.jpg);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+
+.dokumentacijaslika {
+  margin: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+}
+  
+.logooo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: -1;
+  opacity: 0;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.logooo:hover::after  {
+  opacity: 1;
+}
+
+.logooo {
+  position: relative;
+}
+
+input, button, textarea{
+  outline: none;
+  border: none;
+  padding: .5em;
+  background-color: #c8dac9;
+  box-shadow: inset 2px 4px 6px rgba(105, 105, 105, 0.4);
+  transition: 250ms ease-in-out;
+  border-radius: 5px;
+}
+
+input:focus {
+  background-color: rgb(255, 255, 255);
+  transform: scale(1.05);
+  box-shadow: 13px 13px 100px #ffffff,
+             -13px -13px 100px #ffffff;
+}
+
+.gumb button {
+  font-size: 2.2rem; 
+  padding: 10px 20px; 
+}
+
+
+.galerija img {
+  border-radius: 10px;
+}
+
+
+table {
+  color: #647a57;
+  border-collapse: collapse;
+  font-size: 16px;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 3px solid black;
+}
+
+thead {
+  background-color: #b6bdaa;
+  color: #8c9483d3;
+}
+
+tbody {
+  background-color: #b6cfa573;
+  color: #a3ff57;
+}
+
+td {
+  background-color: #fcfcfcc0;
+  color: #000;
+  text-align: center;
+  border: 1px solid black; /* granica 1 piksel */
+  padding: 8px; /* odmak od sadržaja */
+  font-size: 18px;
+}
+
+th {
+  background-color: #ccc;
+  color: #000;
+  border: 1px solid black; /* granica 1 piksel */
+  padding: 8px; /* odmak od sadržaja */
+  font-size: 18px;
+}
+
+
+td:hover {
+  background-color: #8b9c8a98;
+  transition: background-color 0.3s ease;
+}
+
+.mapa {
+  position: relative;
+}
+
+.mapa iframe{
+  border-radius: 10px;
+
+}
+
+  .mapa::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 6px solid #333;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .mapa:hover::before {
+    opacity: 1;
+  }
+  
+.footer {
+  padding: 20px;
+  color: #ffffff;
+  font-size:20px;
+  background-color: #000000a1;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.dekoracija {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.linija {
+  border-top: 1px solid #ddddddde;
+  padding-top: 20px;
+}
+
+video {
+  border: none;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+a img {
+  transition: transform 0.1s ease-in-out;
+}
+
+a:hover img {
+  transform: scale(1.12);
+}
+
+tr:nth-child(odd) {
+  background-color: #44967d;
+}
+
+.receznijee ul > li {
+  background-color: #eeeeee49;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.receznijee ul > li + li {
+  margin-top: 10px;
+}
+
+.receznijee ul > li ~ li {
+  padding-top: 5px;
+  border-top: 1px solid #ccc;
+}
+
+a[href$="recenzije.html"] {
+  background-color: rgba(255, 255, 255, 0.329);
+}
+
